@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login Page</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <div class="login-container">
+    <h2>Login</h2>
+    <form onsubmit="return false">
+      <label for="username">Username:</label>
+      <input type="text" id="username" required>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" required>
+
+      <button onclick="login()">Login</button>
+    </form>
+  </div>
+
+  <script>
+    function login() {
+      var username = document.getElementById('username').value;
+      var password = document.getElementById('password').value;
+
+      // Replace this block with actual backend authentication code.
+      if (username === 'yourusername' && password === 'yourpassword') {
+        alert('Login successful!');
+      } else {
+        alert('Invalid credentials. Please try again.');
+      }
+    }
+  </script>
+</body>
+</html>
